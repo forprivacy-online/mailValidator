@@ -1,0 +1,2 @@
+# mailValidator
+✅📥 Mail Validator Module
