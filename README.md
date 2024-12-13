@@ -42,10 +42,6 @@ pip install dnspython requests
 
 ## 📄 Uso
 
-Para comenzar a usar **mailValidator**, importa la clase `EmailVerifier` y llama al método `verify` con la dirección de correo electrónico que deseas verificar. 
-
-**Nota**: Debes reemplazar `TU_CLAVE_DE_API` en el archivo `verifier.py` con tu clave de API de Abstract API para la verificación adicional.
-
 ```python
 import mailValidator
 
