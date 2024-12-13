@@ -47,17 +47,19 @@ Para comenzar a usar **mailValidator**, importa la clase `EmailVerifier` y llama
 **Nota**: Debes reemplazar `TU_CLAVE_DE_API` en el archivo `verifier.py` con tu clave de API de Abstract API para la verificación adicional.
 
 ```python
-from email_verifier.verifier import EmailVerifier
+import mailValidator
 
-email = "example@example.com"
-is_valid, message = EmailVerifier.verify(email)
-print(f"Valid: {is_valid}, Message: {message}")
-```
+# Solicita la clave de Abstract API
+ABSTRACT_API_KEY = "tu_api_key_aqui"  # Reemplaza con tu clave de Abstract API
 
-### Ejemplo de salida
+# Solicita el correo electrónico a validar
+test_email = input("Ingresa el correo electrónico a validar: ")
 
-```bash
-Valid: True, Message: Email is valid
+# Validar correo
+if mailValidator.validate_email(test_email, ABSTRACT_API_KEY):
+    print("\n[Resultado] El correo electrónico es válido y verificable.")
+else:
+    print("\n[Resultado] El correo electrónico no es válido o no se pudo verificar.")
 ```
 
 <br>
