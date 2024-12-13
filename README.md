@@ -62,6 +62,19 @@ else:
     print("\n[Resultado] El correo electrónico no es válido o no se pudo verificar.")
 ```
 
+#### Ejemplo de salida
+```c
+Ingresa el correo electrónico a validar: usuario@ejemplo.com
+
+Validando: usuario@ejemplo.com
+[OK] Formato de correo válido.
+[OK] Registros MX encontrados.
+[OK] Servidor SMTP operativo.
+[OK] Buzón de correo verificado.
+
+[Resultado] El correo electrónico es válido y verificable.
+```
+
 <br>
 
 ## 📚 Funciones principales
